@@ -46,10 +46,10 @@ Use the copy function below to do the following:
 */
 
 function copy(){
-  
+  console.log('Task 1:', originalFlavors);
 }    
 
-
+copy()
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -63,11 +63,15 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(originalFlavors){
-  originalFlavors === 31;
+function is31Flavors(){
+  if (originalFlavors === 31){
+    console.log('Task 2:', 'true');
+  } else if (originalFlavors !== 31){
+    console.log('Task 2:', 'false')
+  }
 }
 
-console.log(is31Flavors(originalFlavors));
+is31Flavors()
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -102,7 +106,7 @@ Use the removeLastFlavor function below to do the following:
 
 function removeLastFlavor(){
   originalFlavors.pop();
-  console.log('Task4:', originalFlavors);
+  console.log('Task 4:', originalFlavors);
 }
 
 removeLastFlavor();
@@ -118,10 +122,11 @@ Use the getFlavorByIndex function below to do the following:
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-  /*your code here*/
+function getFlavorByIndex(){
+  console.log('Task 5:', originalFlavors[5]);
 }
 
+getFlavorByIndex()
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, 
@@ -138,8 +143,8 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(){
+  
 }
 
 
