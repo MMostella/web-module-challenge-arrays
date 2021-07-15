@@ -47,7 +47,7 @@ Use the copy function below to do the following:
 
 
 function copy(array){
- 
+  return [...array];
 }    
 
 console.log('Task 1:', copy(originalFlavors));
@@ -88,10 +88,11 @@ Use the addFlavor function below to do the following:
 
 
 function addFlavor(array, flavor){
-  
+  array.unshift(flavor);
+  return array;
 }
 
-console.log('Task 3:',)
+console.log('Task 3:', addFlavor(originalFlavors, 'Rainbow Sherbert'))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
@@ -105,8 +106,8 @@ Use the removeLastFlavor function below to do the following:
 */
 
 function removeLastFlavor(array){
-    const removeFlav = array.pop();
-    return removeFlav;
+    array.pop();
+    return array;
 }
 
 console.log('Task 4:', removeLastFlavor(originalFlavors));
